@@ -5,6 +5,8 @@ Cordova Plugin For Multiple Image Selection - implemented for iOS and Android 4.
 
 这是一个中文汉化版的Cordova-imagePicker，仅做汉化处理，没有修改任何功能代码。
 
+ios 完全汉化还需要用Xcode修改 `**（项目名）.xcodeproj`文件的`info`--`Localization native development region`为`China`
+
 ## Installing the plugin
 
 The plugin conforms to the Cordova plugin specification, it can be installed
