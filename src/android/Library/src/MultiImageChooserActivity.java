@@ -173,8 +173,8 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
         setupHeader();
         updateAcceptButton();
         progress = new ProgressDialog(this);
-        progress.setTitle("Processing Images");
-        progress.setMessage("This may take a few moments");
+        progress.setTitle("加载图片中。。。");
+        progress.setMessage("只需要一小会，请耐心等待");
     }
     
     @Override
@@ -189,8 +189,8 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
         if (maxImages == 0 && isChecked) {
             isChecked = false;
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Maximum " + maxImageCount + " Photos");
-            builder.setMessage("You can only select " + maxImageCount + " photos at a time.");
+            builder.setTitle("选择超过 " + maxImageCount + " 张图片");
+            builder.setMessage("一次最多只能选择 " + maxImageCount + " 张图片");
             builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int which) { 
                     dialog.cancel();
@@ -590,7 +590,7 @@ public class MultiImageChooserActivity extends Activity implements OnItemClickLi
                 bmp = BitmapFactory.decodeFile(file.getAbsolutePath(), options);
             }
             if (bmp == null) {
-                throw new IOException("The image file could not be opened.");
+                throw new IOException("改图片文件无法打开.");
             }
             if (options != null && shouldScale) {
                 float scale = calculateScale(options.outWidth, options.outHeight);

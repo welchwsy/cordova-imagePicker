@@ -3,14 +3,16 @@ cordova-imagePicker
 
 Cordova Plugin For Multiple Image Selection - implemented for iOS and Android 4.0 and above.
 
+这是一个中文汉化版的Cordova-imagePicker，仅做汉化处理，没有修改任何功能代码。
+
 ## Installing the plugin
 
 The plugin conforms to the Cordova plugin specification, it can be installed
 using the Cordova / Phonegap command line interface.
 
-    phonegap plugin add https://github.com/wymsee/cordova-imagePicker.git
+    phonegap plugin add https://github.com/welchwsy/cordova-imagePicker.git
 
-    cordova plugin add https://github.com/wymsee/cordova-imagePicker.git
+    cordova plugin add https://github.com/welchwsy/cordova-imagePicker.git
 
 
 ## Using the plugin
